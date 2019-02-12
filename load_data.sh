@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir -p data/
 cd data/
 
 # Downloading data
