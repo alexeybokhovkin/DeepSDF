@@ -1,2 +1,6 @@
 data/raw_data/
 src/notebooks/.ipynb_checkpoints/
+src/backend/__pycache__/
+
+*.npy
+*.npz
