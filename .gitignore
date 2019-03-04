@@ -1,4 +1,5 @@
 data/raw_data/
+data/processed_data/
 src/notebooks/.ipynb_checkpoints/
 src/backend/__pycache__/
 src/backend/datasets/__pycache__/
