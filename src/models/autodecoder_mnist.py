@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import torch.nn.init as init
 
 
 class AD(nn.Module):
@@ -14,7 +15,7 @@ class AD(nn.Module):
             nn.Linear(256, 512),
             nn.ReLU(True), nn.Linear(512, 28 * 28), nn.Tanh())
         
-        self.latent_vectors = nn.Parameter(torch.FloatTensor(data_shape, latent_size))
+        self.latent_vectors = nn.Parameter(torch.FloatTensor(data_shape, z_dim))
         
         init.xavier_normal(self.latent_vectors)
     
