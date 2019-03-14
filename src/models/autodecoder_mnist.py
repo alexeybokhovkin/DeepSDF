@@ -5,7 +5,7 @@ import torch.nn.init as init
 
 
 class AD(nn.Module):
-    def __init__(self, image_size=784, z_dim=latent_size, data_shape=60000):
+    def __init__(self, image_size=784, z_dim=2, data_shape=60000):
         super(AD, self).__init__()
         self.decoder = nn.Sequential(
             nn.Linear(z_dim, 128),

@@ -5,6 +5,7 @@ src/notebooks/.ipynb_checkpoints/
 src/backend/__pycache__/
 src/backend/datasets/__pycache__/
 src/backend/sampler/__pycache__/
+src/models/__pycache__/
 
 *.npy
 *.npz

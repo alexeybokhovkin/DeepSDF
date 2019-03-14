@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class AD_SDF(nn.Module):
-    def __init__(self, image_size=784, z_dim=latent_size, data_shape=256):
+    def __init__(self, image_size=784, z_dim=256, data_shape=200):
         super(AD, self).__init__()
         self.decoder_stage1 = nn.Sequential(
             nn.Linear(z_dim+3, 512),
